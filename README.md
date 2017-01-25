@@ -10,6 +10,3 @@ Based in [bson-objectid](https://github.com/williamkapke/bson-objectid).
 
     $id = ObjectID::generate(); //5888a045e4b30039941b35b0
 
-##License
-
-Apache v2.0
