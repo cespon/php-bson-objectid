@@ -39,6 +39,3 @@ class ObjectID
 			   self::hex(6, self::next( self::$index ));
 	}
 }
-
-$id = ObjectID::generate();
-echo $id;
