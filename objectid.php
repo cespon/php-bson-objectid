@@ -22,9 +22,9 @@ class ObjectID
 		return (strlen($n) == $length)? $n : str_repeat("0", $length-strlen($n)) . $n;
 	}
 
-	private function next($index)
+	private function next()
 	{
-		return self::$index = ($index + 1) % 0xFFFFFF;
+		return self::$index = (self::$index + 1) % 0xFFFFFF;
 	}
 
 	public function generate()
@@ -36,6 +36,6 @@ class ObjectID
 		return self::hex(8, $time) . 
 			   self::hex(6, self::$MACHINE_ID) .
 			   self::hex(4, self::$pid) . 
-			   self::hex(6, self::next( self::$index ));
+			   self::hex(6, self::next());
 	}
 }
