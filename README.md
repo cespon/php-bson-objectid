@@ -1,10 +1,9 @@
 
 # PHP BSON ObjectID
 
-This PHP class allows you to create ObjectIDs without dependencies like the MongoDB driver.
+Create ObjectIDs without dependencies.
 
 Based in [bson-objectid](https://github.com/williamkapke/bson-objectid).
-
 
 ## Usage
 
